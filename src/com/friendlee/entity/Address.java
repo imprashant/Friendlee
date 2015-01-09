@@ -1,6 +1,13 @@
 package com.friendlee.entity;
 
+import com.sun.corba.se.spi.ior.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 public class Address {
+	@Id
+	private ObjectId id
 	private String street1;
 	private String street2;
 	private String state;	

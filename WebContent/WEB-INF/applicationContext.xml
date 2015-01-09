@@ -29,7 +29,16 @@
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">		
 	</bean>
-
+	
+	<mongo:mongo>
+		<mongo:options auto-connect-retry="true"/>
+	</mongo:mongo>
+	
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg ref="mongo">
+		</constructor-arg>
+		<constructor-arg value="Friendlee"></constructor-arg>
+	</bean>
 
 	
 </beans>

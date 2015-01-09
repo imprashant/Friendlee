@@ -44,7 +44,33 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 		<artifactId>mongo-java-driver</artifactId>
 		<version>2.12.4</version>
 	</dependency>
+	
+	<!-- <dependency>
+		<groupId>org.springframework.data</groupId>
+		<artifactId>spring-data-jpa</artifactId>
+		<version>1.7.1.RELEASE</version>
+	</dependency> -->
+	
+	<dependency>
+		<groupId>org.springframework.data</groupId>
+		<artifactId>spring-data-mongodb</artifactId>
+		<version>1.6.1.RELEASE</version>
+	</dependency>
+	
+	<!-- mongodb java driver -->
+	<dependency>
+		<groupId>org.mongodb</groupId>
+		<artifactId>mongo-java-driver</artifactId>
+		<version>2.12.4</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>cglib</groupId>
+		<artifactId>cglib</artifactId>
+		<version>3.1</version>
+	</dependency>
 		
+
 
 </dependencies>
 
